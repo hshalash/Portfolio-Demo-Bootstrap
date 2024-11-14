@@ -1,0 +1,645 @@
+/* ------------------------ GLOBAL ------------------------  */
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../Fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+:root {
+  --main-color: #748182;
+  --secondary-color: #999;
+  --dark-grey: #343434;
+  --grey: #888;
+  --bg-section: #f7f7f7;
+  --secondary-font: montserrat;
+}
+.main-color {
+  color: var(--main-color);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.main-bg-theme {
+  background-color: var(--bg-section);
+}
+
+.secondary-font {
+  font-family: montserrat, sans-serif;
+}
+
+/* ------------------------ HEADER ------------------------  */
+
+.home {
+  background: url(../Images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-caption p {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.home-caption h2 {
+  font-size: 60px;
+}
+
+.socials span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* .header-animation::after {
+  content: "";
+  animation-name: header-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+} */
+
+/* @keyframes header-animation {
+  0% {
+    content: "D";
+  }
+  3% {
+    content: "De";
+  }
+  6% {
+    content: "Dev";
+  }
+  9% {
+    content: "Deve";
+  }
+  12% {
+    content: "Devel";
+  }
+  15% {
+    content: "Develo";
+  }
+  18% {
+    content: "Develop";
+  }
+  21% {
+    content: "Develope";
+  }
+  24% {
+    content: "Developer";
+  }
+  30% {
+    content: "Developer";
+  }
+  33% {
+    content: "Develope";
+  }
+  36% {
+    content: "Develop";
+  }
+  39% {
+    content: "Develo";
+  }
+  42% {
+    content: "Devel";
+  }
+  45% {
+    content: "Deve";
+  }
+  48% {
+    content: "Dev";
+  }
+  51% {
+    content: "De";
+  }
+  54% {
+    content: "D";
+  }
+
+  57% {
+    content: "De";
+  }
+  60% {
+    content: "Des";
+  }
+  63% {
+    content: "Desi";
+  }
+  66% {
+    content: "Desig";
+  }
+  69% {
+    content: "Design";
+  }
+  72% {
+    content: "Designe";
+  }
+  75% {
+    content: "Designer";
+  }
+  81% {
+    content: "Designer";
+  }
+  84% {
+    content: "Designe";
+  }
+  87% {
+    content: "Design";
+  }
+  90% {
+    content: "Desig";
+  }
+  93% {
+    content: "Desi";
+  }
+  96% {
+    content: "Des";
+  }
+  99% {
+    content: "De";
+  }
+  100% {
+    content: "D";
+  }
+} */
+
+/* ------------------------ NAVBAR ------------------------  */
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+li.nav-item {
+  font-size: 14px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #222;
+  padding-bottom: 2px;
+}
+
+.nav-link {
+  transition: border-bottom 0.3s;
+  color: var(--dark-grey);
+}
+
+/* ------------------------ ABOUT ------------------------  */
+
+.hero-img {
+  position: relative;
+  padding-left: 30px;
+}
+
+.hero-img:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../Images/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: 5px;
+  color: #343434;
+}
+
+.progress {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.progress1 {
+  position: relative;
+}
+.progress1:after {
+  content: "95%";
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 11px;
+  color: white;
+}
+.progress2 {
+  position: relative;
+}
+.progress2:after {
+  content: "80%";
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 11px;
+  color: white;
+}
+.progress3 {
+  position: relative;
+}
+.progress3:after {
+  content: "90%";
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 11px;
+  color: white;
+}
+
+.buttons a {
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+.textandprogress {
+  font-size: 15px;
+}
+
+/* ------------------------ SERVICES ------------------------  */
+
+
+.dotted {
+  position: relative;
+}
+
+.dotted:after {
+  content: "";
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  left: 42.5%;
+  bottom: -5px;
+  background-image: url(../Images/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-family: montserrat, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.3s ease-in;
+}
+
+.single-card:hover .icon {
+  background-color: black;
+  color: white;
+}
+
+.single-card {
+  padding: 35px 10px;
+  background: white;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* ------------------------ PORTFOLIO ------------------------  */
+
+.filters a {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* ------------------------ WORKS ------------------------  */
+
+.d-none {
+  display: none !important;
+}
+
+.filters span.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 2.4px;
+}
+
+.filters span {
+  cursor: pointer;
+}
+
+.img-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer {
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  bottom: -100%;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.6s;
+  overflow: hidden;
+}
+
+.img-card:hover .layer {
+  bottom: 1.8%;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #111;
+  position: relative;
+  bottom: -100%;
+  transition: all 0.5s;
+}
+
+.img-card:hover .icon-circle {
+  bottom: 0%;
+}
+
+.icon-circle i {
+  color: white;
+  margin-top: 11px;
+}
+
+.icon-circle:hover i {
+  color: #111;
+}
+
+.icon-circle:hover {
+  background-color: white;
+  border: 1px solid #111;
+}
+
+.img-card-title {
+  position: absolute;
+  top: -150%;
+  transition: all 0.5s 0.1s;
+  font-family: montserrat, sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.img-card:hover .img-card-title {
+  top: 30%;
+}
+
+/* ------------------------ TESTIMONIALS ------------------------  */
+
+.carousel-item img {
+  width: 10%;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #869791;
+}
+
+.carousel-caption {
+  position: relative;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.carousel-caption p {
+  word-spacing: 2px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.carousel-caption h5 {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.carousel-caption span {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* ------------------------ COUNTERS ------------------------  */
+
+.counter i {
+  font-size: 30px;
+}
+
+.counter p {
+  font-weight: 900;
+}
+
+.counter span {
+  font-weight: 600;
+}
+
+.card img {
+  border-radius: 0%;
+}
+
+/* ------------------------ TEAM ------------------------  */
+
+#team .card-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#team .card-body {
+  background-color: #5d5d5d;
+}
+
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay img {
+  transition: all 0.5s;
+}
+
+.img-overlay-content {
+  background-color: white;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5%;
+  height: 5%;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: all 0.6s;
+}
+
+#team .card:hover .img-overlay-content {
+  left: 1%;
+  top: 1%;
+  opacity: 0.95;
+  width: 98%;
+  height: 98%;
+  transform: rotateY(0deg);
+}
+
+#team .img-overlay:hover img {
+  transform: scale(1.2);
+}
+
+.icon-circle2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #111;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.icon-circle2 i {
+  color: white;
+  margin-top: 11px;
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+
+.icon-circle2:hover i {
+  color: #111;
+}
+
+.icon-circle2:hover {
+  background-color: white;
+  border: 1px solid #111;
+}
+
+/* ------------------------ CONTACT US ------------------------  */
+
+.icon-circle3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.icon-circle3 i {
+  margin-top: 11px;
+  position: absolute;
+  top: 13%;
+  left: 28%;
+  font-size: 25px;
+}
+
+#contact span {
+  font-size: 15px;
+}
+
+#contact p {
+  font-size: 16px;
+}
+
+.method:hover .icon-circle3 {
+  background-color: #343434;
+  color: white;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  border: none;
+  outline: 0;
+  box-shadow: none;
+  background-color: #f7f7f7;
+}
+
+.form-control {
+  background-color: #f7f7f7;
+}
+
+#contact .btn {
+  width: 10%;
+}
+
+#footer p {
+  font-size: 13px;
+}
